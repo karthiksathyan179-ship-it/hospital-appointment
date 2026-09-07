@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MediCare+ Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">MediCare+</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#departments">Departments</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="home">
+    <div class="home-text">
+        <p class="small-title">WELCOME TO MEDICARE+</p>
+        <h1>Your Health,<br>Our Priority.</h1>
+        <p>Quality healthcare with experienced doctors and easy online appointment booking.</p>
+        <a href="#appointment" class="button">Book Appointment</a>
+    </div>
+    <div class="home-box">
+        <h2>24/7</h2><p>Emergency Care</p>
+        <hr>
+        <h2>50+</h2><p>Specialist Doctors</p>
+        <hr>
+        <h2>10+</h2><p>Departments</p>
+    </div>
+</section>
+
+<section id="departments">
+    <div class="heading">
+        <p>OUR SERVICES</p><h2>Medical Departments</h2>
+    </div>
+    <div class="department-container">
+        <div class="department"><div class="icon">❤️</div><h3>Cardiology</h3><p>Heart and cardiovascular care.</p></div>
+        <div class="department"><div class="icon">🧠</div><h3>Neurology</h3><p>Brain and nervous system care.</p></div>
+        <div class="department"><div class="icon">🦴</div><h3>Orthopedics</h3><p>Bone and joint treatment.</p></div>
+        <div class="department"><div class="icon">👶</div><h3>Pediatrics</h3><p>Healthcare for children.</p></div>
+    </div>
+</section>
+
+<section id="doctors" class="doctor-section">
+    <div class="heading"><p>OUR SPECIALISTS</p><h2>Meet Our Doctors</h2></div>
+    <div class="doctor-container">
+        <div class="doctor"><div class="doctor-image">DR</div><h3>Dr. Arun Kumar</h3><p>Cardiologist</p><span>10+ Years Experience</span></div>
+        <div class="doctor"><div class="doctor-image">DR</div><h3>Dr. Anjali Menon</h3><p>Neurologist</p><span>8+ Years Experience</span></div>
+        <div class="doctor"><div class="doctor-image">DR</div><h3>Dr. Rahul Thomas</h3><p>Orthopedic Specialist</p><span>12+ Years Experience</span></div>
+    </div>
+</section>
+
+<section id="appointment" class="appointment">
+    <div class="heading"><p>ONLINE BOOKING</p><h2>Book an Appointment</h2></div>
+    <form id="appointmentForm">
+        <div class="form-row">
+            <div class="input-box"><label>Patient Name</label><input type="text" id="name" placeholder="Enter your name" required></div>
+            <div class="input-box"><label>Phone Number</label><input type="text" id="phone" placeholder="Enter phone number" required></div>
+        </div>
+        <div class="form-row">
+            <div class="input-box"><label>Department</label><select id="department" required>
+                <option value="">Select Department</option><option>Cardiology</option><option>Neurology</option><option>Orthopedics</option><option>Pediatrics</option>
+            </select></div>
+            <div class="input-box"><label>Doctor</label><select id="doctor" required>
+                <option value="">Select Doctor</option><option>Dr. Arun Kumar</option><option>Dr. Anjali Menon</option><option>Dr. Rahul Thomas</option>
+            </select></div>
+        </div>
+        <div class="form-row">
+            <div class="input-box"><label>Appointment Date</label><input type="date" id="date" required></div>
+            <div class="input-box"><label>Appointment Time</label><select id="time" required>
+                <option value="">Select Time</option><option>09:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>02:00 PM</option><option>03:00 PM</option><option>04:00 PM</option>
+            </select></div>
+        </div>
+        <div class="input-box"><label>Reason for Visit</label><textarea id="reason" placeholder="Enter reason for appointment"></textarea></div>
+        <button type="submit" class="submit-button">Confirm Appointment</button>
+    </form>
+
+    <div id="confirmation" class="confirmation">
+        <h2>✓ Appointment Confirmed</h2>
+        <p id="confirmationText"></p>
+        <button onclick="closeConfirmation()">Close</button>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div><h2>MediCare+</h2><p>Providing quality healthcare with compassion and care.</p></div>
+    <div><h3>Contact</h3><p>📞 +91 98765 43210</p><p>✉️ medicare@gmail.com</p></div>
+    <div><h3>Address</h3><p>Medical Road,<br>Kerala, India</p></div>
+</section>
+
+<footer><p>© 2026 MediCare+ Hospital. All Rights Reserved.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
